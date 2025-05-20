@@ -1,0 +1,102 @@
+﻿body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+	max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+    background-color: var(--light-color-fondo);
+}
+
+.menu{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    color: #888;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Work Sans';
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Titillium Web';
+    color: var(--light-color-texto);
+    height: 40px;
+}
+.formtext{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.formtext label{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'biryani';
+    color: var(--light-color-texto);
+}
+
+.formtext input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #d3eee4;
+    opacity: 0.6;
+    font-family: 'Work Sans';
+}
+
+hr{
+    background-color: var(--light-color-acento-3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 0.5px;
+}
+.btn_guardar input{
+    background: var(--light-color-acento-1);
+    color:#fcfdfd;
+    border: none;
+    padding: 10px 20px;     
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    cursor: pointer;
+}
+.password-row .btn_cambiar{ 
+    background: var(--light-color-acento-3);
+    color: #fcfdfd;
+    padding: 10px 20px;     
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    width: 20%;
+    cursor: pointer;
+}
+
+.password-row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.password-row input{
+    width: 80%;
+}
+
+.datarow{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    
+}
