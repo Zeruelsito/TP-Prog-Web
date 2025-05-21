@@ -1,6 +1,5 @@
 ﻿/* @import url("temas-colores-fuentes.css"); */
-
-#encabezado-principal {
+*/ #encabezado-principal {
    background-color: red;
    color: white;
 }
@@ -10,17 +9,17 @@
 }
 
 #seccion-categoria {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(4, 115em);
-    grid-gap: 10px;
-    background-color: orange;
-    align-items: baseline;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   background-color: orange;
+   justify-content: center;
 }
 
 .articulo-categoria {
    border: solid 3px gray;
+   padding: 1em;
+   margin: 0.5em;
 }
 
 #footer-principal {
@@ -29,24 +28,23 @@
 }
 
 #qr-code {
-   width:100px;
-   height:100px;
+   width: 100px;
+   height: 100px;
 }
 
-img{
+img {
    max-height: 500px;
 }
 
-.detalle-articulo{
+.detalle-articulo {
    display: flex;
-    align-items: center;
-    flex-direction: column;
+   align-items: center;
+   flex-direction: column;
 }
 
 
-.header-articulo{
+.header-articulo {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-
