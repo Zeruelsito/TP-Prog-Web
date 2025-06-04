@@ -12,18 +12,21 @@
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 10px;
-   background-color: orange;
+   background-color: #fcfdfd;
    justify-content: center;
 }
 
 .articulo-categoria {
-   border: solid 3px gray;
+
+   background-color: #d3eee4;
+   border: solid 3px #3d6b45;
+   border-radius: 20px;
    padding: 1em;
    margin: 0.5em;
 }
 
 #footer-principal {
-   background-color: blue;
+   background-color: #8eaf93;
    color: white;
 }
 
@@ -48,3 +51,57 @@ img {
    flex-direction: column;
    align-items: center;
 }
+
+.item-valor-nombre {
+   font-weight: 800;
+   border-style: groove;
+   border-width: 0px 0px 3px 0px;
+   border-color: #8eaf93;
+   text-align: center;
+   font-size: 35px;
+   font-family: 'Titillium Web';
+}
+
+.item-valor-autor {
+   font-size: 20px;
+   font-family: 'Biryani'
+}
+
+#navegacion-categoria {
+   border: solid 2px #3d6b45;
+   border-radius: 10px;
+   background-color: #d3eee4;
+   font-family: 'Titillium Web';
+   display: flex;
+   font-size: 24px;
+   font-weight: bolder;
+   justify-content: space-evenly;
+   margin-bottom: 15px;
+}
+
+.tab-categoria {
+   -webkit-text-fill-color: #070d0b;
+   padding: 0px 20px 0px 20px;
+   text-decoration: none;
+}
+
+.item-valor-descripcion{
+   font-family: 'Work Sans';
+   font-size: 20px;
+}
+
+.detalle-articulo h4 { 
+   font-size: 45px;
+   font-family: 'Titillium Web';
+   margin-bottom: 0px;
+   margin-top: 20px;
+}
+
+.detalle-articulo p{
+   margin-bottom: 40px;
+   padding-bottom: 5px;
+   border-style: groove;
+   border-width: 0px 0px 3px 0px;
+   border-color: #8eaf93;
+}
+
