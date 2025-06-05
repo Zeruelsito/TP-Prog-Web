@@ -1,9 +1,39 @@
 ﻿/* @import url("temas-colores-fuentes.css"); */
 #encabezado-principal {
-   background-color: red;
-   color: white;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding: 30px 30px;
+   font-family: 'work sans';
+   font-size: 30px;
+   background-color: #d3eee4;
+   color: #3d6b45;
+   text-align: center;
 }
-
+#encabezado-principal .menu a {
+   text-decoration: none;
+   color: #3d6b45;
+   font-size: 25px;
+}
+#encabezado-principal .menu a:hover {
+   color: #58a76c;
+   font-weight: bold;
+}
+ 
+#encabezado-principal .buscador form input {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   border-bottom: 2px solid #3d6b45;
+   font-size: 20px;
+   font-family: 'titillium web';
+   background-color: transparent;
+   color: #070d0b;
+} 
+#encabezado-principal form input::placeholder {
+   color: #3d6b45;
+   font-family: 'titillium web';
+}
 #navegacion-categoria {
    background-color: lime;
 }
@@ -27,7 +57,8 @@
 
 #footer-principal {
    display: grid;
-   grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+   grid-template-columns: repeat(3, 1fr);
+   /* 3 columnas de igual tamaño */
    gap: 20px;
    background-color: #3d6b45;
    color: white;
@@ -43,7 +74,7 @@
    font-size: 30px;
    font-family: 'Titillium Web';
    margin-bottom: 20px;
-   
+
 }
 
 #footer-principal-centro {
@@ -56,7 +87,8 @@
    width: 150px;
    height: 150px;
 }
-.boton-registrarse{
+
+#footer-principal-centro .boton-registrarse {
    background-color: #58a76c;
    color: white;
    border: none;
@@ -64,8 +96,9 @@
    font-size: 20px;
    font-family: 'Titillium Web';
    cursor: pointer;
-   border-radius: 50px; 
+   border-radius: 50px;
 }
+
 .boton-registrarse:hover {
    background-color: #8eaf93;
    color: white;
@@ -76,13 +109,15 @@
    padding: 0;
    margin-top: 40px;
 }
-#footer-principal ul li a{
+
+#footer-principal ul li a {
    text-decoration: none;
    color: white;
    text-transform: uppercase;
    font-size: 20px;
-   
+
 }
+
 img {
    max-height: 500px;
 }
