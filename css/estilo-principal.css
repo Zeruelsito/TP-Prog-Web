@@ -99,7 +99,7 @@
    border-radius: 50px;
 }
 
-.boton-registrarse:hover {
+#footer-principal-centro .boton-registrarse:hover {
    background-color: #8eaf93;
    color: white;
 }
