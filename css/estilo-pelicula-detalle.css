@@ -1,0 +1,190 @@
+/* Foto de Perfil HEADER */
+.foto-perfil {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sesion-iniciada-icono {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+    justify-content: flex-end;
+}
+
+.sesion-iniciada-icono span {
+    color: #070d0b;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Contenedor principal de la película en detalle */
+.detalle-pelicula {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    width: 100%;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* Imagen de la película en detalle */
+.detalle-portada {
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.detalle-portada img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Informacion de la Pelicula */
+.detalle-info {
+    flex: 1 1 350px;
+    /* Esto hace que el contenedor ocupe al menos 350px de ancho */
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.detalle-info h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: #070d0b;
+    display: inline-block;
+}
+
+.detalle-info h3 {
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 2em;
+    color: #070d0b;
+    display: inline-block;
+}
+
+.detalle-info p {
+    color: #070d0b;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.detalle-info span {
+    font-style: italic;
+}
+
+/* Reparto */
+.detalle-premios {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    max-width: 25em;
+}
+
+.detalle-titulo-reparto,
+.detalle-titulo-premios {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 0.5em;
+    color: #070d0b;
+    width: 100%;
+    font-weight: 600;
+    padding-bottom: 1em;
+    border-bottom: #8eaf93 0.1em solid;
+    font-size: 1em;
+}
+
+.detalle-reparto,
+.detalle-premios li {
+    font-family: 'Work Sans', sans-serif;
+    flex: 1 1 45%;
+    color: #070d0b;
+    display: inline-block;
+    padding: 0.5em;
+    min-width: 10em;
+    /* Acordate que esto lo hiciste para que el ancho mínimo no se vea muy pequeño */
+    font-size: 15px;
+    width: 100%;
+}
+
+.detalle-reparto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    /* Espacio entre los actores */
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+.detalle-reparto li {
+    background-color: #d3eee4;
+    border-radius: 0.5em;
+    padding: 5px;
+    margin-bottom: 0.5em;
+    width: fit-content;
+}
+
+
+.info-imagen {
+    display: flex;
+    justify-content: space-between;
+    width: max-content
+}
+
+/* Taquilla */
+
+/* Duracion */
+.detalle-duracion {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Premios */
+
+.detalle-premios-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em 2em;
+    /* Acordate que esto lo hiciste para el espacio entre fila y fila */
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    max-width: 25em;
+}
+
+/* Clasificacion por Edad */
+
+/* Detalle del panel para la calificacion */
+.detalle-panel {
+    border-radius: 1em;
+    padding: 2em 1.5em;
+    color: #070d0b;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    margin-left: 2em;
+}
+
+.detalle-calificacion h4 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 1em 0 0.5em 0;
+    font-size: 1.1em;
+}
+
+.estrella {
+    color: #3d6b45;
+    font-size: 1.7em;
+    margin: 0 0.1em;
+}
