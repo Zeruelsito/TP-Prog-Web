@@ -5,24 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani');
 
 :root {
-   --light-color-texto: #070d0b;
-   --light-color-fondo: #fcfdfd;
-   --light-color-acento-1: #3d6b45;
-   --light-color-acento-2: #d3eee4;
-   --light-color-acento-3: #8eaf93;
-   --dark-color-texto: #ffffff;
-   --dark-color-fondo: #070d0b;
-   --dark-color-acento-1: #d3eee4;
-   --dark-color-acento-2: #34603b;
-   --dark-color-acento-3: #58a76c;
+   --color-texto: #070d0b;
+   --color-fondo: #fcfdfd;
+   --color-acento-1: #3d6b45;
+   --color-acento-2: #d3eee4;
+   --color-acento-3: #8eaf93;
 }
 
- .light-theme {
-   color: var(--light-color-texto);
-   background-color: var(--light-color-fondo);
-}
-
-.dark-theme {
-   color: var(--dark-color-texto);
-   background-color: var(--dark-color-fondo);
+.modo-oscuro {
+   --color-texto: #ffffff;
+   --color-fondo: #070d0b;
+   --color-acento-1: #d3eee4;
+   --color-acento-2: #34603b;
+   --color-acento-3: #8eaf93;
 }

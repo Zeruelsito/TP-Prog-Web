@@ -6,7 +6,7 @@ function botonClickeado(numeroBoton) {
         if (botonesSelecciones[i].id === botonModificar) {
             document.getElementById(botonesSelecciones[i].id).style.cssText = 'background-color: black; color: white; border-radius:20px;';
         } else {
-          document.getElementById(botonesSelecciones[i].id).style.cssText = 'background-color: white; color: dark;';
+            document.getElementById(botonesSelecciones[i].id).style.cssText = 'background-color: white; color: dark;';
         }
     }
 }

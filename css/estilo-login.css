@@ -1,13 +1,13 @@
 ﻿/* estilos-login.css */
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 800px;
 }
 
-.contenedor{
+.contenedor {
     border-radius: 45px;
     border: 3px solid black;
     padding: 20px;
@@ -16,16 +16,16 @@ body{
     flex-direction: column;
 }
 
-.inputMailContraseña{
+.inputMailContraseña {
     margin: 5px;
-    
+
 }
 
-.botonInicioSesionRegistro{
+.botonInicioSesionRegistro {
     border: none;
-    color:#fcfdfd;
+    color: #fcfdfd;
     border-radius: 10px;
-    background-color: #3d6b45;
+    background-color: var(--color-acento-1);
     margin: 12px 0px 0px 0px;
     padding: 14px 40px 14px 40px;
     font-size: 16px;
@@ -34,30 +34,31 @@ body{
     font-weight: bold;
 }
 
-.formtext input{
+.formtext input {
     padding: 10px;
     border-radius: 5px;
     border: none;
     font-size: 16px;
-    background-color: #d3eee4;
+    background-color: var(--color-acento-2);
     opacity: 0.6;
     font-family: 'Work Sans';
 }
-.title{
+
+.title {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Titillium Web';
-    color: var(--light-color-texto);
+    color: var(--color-texto);
     height: 40px;
 }
 
-.hiperlink{
+.hiperlink {
     font-size: 14px;
     font-family: 'Work Sans';
     text-decoration: none;
 }
-    
-.parrafos{
+
+.parrafos {
     font-size: 14px;
     font-family: 'Work Sans';
 }

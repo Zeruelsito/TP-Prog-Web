@@ -9,13 +9,14 @@
 .sesion-iniciada-icono {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 33%;
     justify-content: flex-end;
+    margin-right: 40px
 }
 
 .sesion-iniciada-icono span {
-    color: #070d0b;
+    color: var(--color-texto);
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -26,8 +27,8 @@
     align-items: flex-start;
     gap: 2em;
     width: 100%;
-    margin: 2em auto;
-    padding: 0 1em;
+    padding: 1em;
+    background-color: var(--color-fondo);
 }
 
 /* Imagen de la película en detalle */
@@ -40,7 +41,7 @@
 .detalle-portada img {
     width: 300px;
     border-radius: 10px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 24px rgb(78, 87, 74);
 }
 
 
@@ -57,19 +58,19 @@
     font-size: 3em;
     font-weight: 800;
     margin-bottom: 0.5em;
-    color: #070d0b;
+    color: var(--color-texto);
     display: inline-block;
 }
 
 .detalle-info h3 {
     font-family: 'Work Sans', sans-serif;
     margin-top: 2em;
-    color: #070d0b;
+    color: var(--color-texto);
     display: inline-block;
 }
 
 .detalle-info p {
-    color: #070d0b;
+    color: var(--color-texto);
     font-size: 1.2em;
     margin-bottom: 1.5em;
 }
@@ -92,11 +93,11 @@
 .detalle-titulo-premios {
     font-family: 'Work Sans', sans-serif;
     margin-bottom: 0.5em;
-    color: #070d0b;
+    color: var(--color-texto);
     width: 100%;
     font-weight: 600;
     padding-bottom: 1em;
-    border-bottom: #8eaf93 0.1em solid;
+    border-bottom: var(--color-acento-3) 0.1em solid;
     font-size: 1em;
 }
 
@@ -104,7 +105,7 @@
 .detalle-premios li {
     font-family: 'Work Sans', sans-serif;
     flex: 1 1 45%;
-    color: #070d0b;
+    color: var(--color-texto);
     display: inline-block;
     padding: 0.5em;
     min-width: 10em;
@@ -125,12 +126,12 @@
 
 .detalle-reparto li {
     background-color: #d3eee4;
+    color: #070d0b;
     border-radius: 0.5em;
     padding: 5px;
     margin-bottom: 0.5em;
     width: fit-content;
 }
-
 
 .info-imagen {
     display: flex;
@@ -147,7 +148,7 @@
     left: 50%;
     top: 100%;
     transform: translate(-50%, -50%);
-    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgb(78, 87, 74);
     z-index: 1;
 }
 
@@ -171,9 +172,9 @@
 .detalle-panel {
     border-radius: 1em;
     padding: 2em 1.5em;
-    color: #070d0b;
+    color: var(--color-texto);
     text-align: center;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 24px rgb(78, 87, 74);
     margin-left: 2em;
 }
 
@@ -184,7 +185,7 @@
 }
 
 .estrella {
-    color: #3d6b45;
+    color: var(--color-acento-);
     font-size: 1.7em;
     margin: 0 0.1em;
 }
