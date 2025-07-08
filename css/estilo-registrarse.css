@@ -4,11 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 800px;
+    background-color: var(--color-fondo);
 }
 
 .contenedor {
     border-radius: 45px;
-    border: 3px solid black;
+    border: 3px solid var(--color-texto);
     padding: 20px;
     text-align: center;
     display: flex;
@@ -21,11 +22,21 @@ body {
 
 .botonInicioSesionRegistro {
     border: none;
-    color: white;
+    color: var(--color-fondo);
     border-radius: 10px;
-    background-color: var(--color-texto);
+    background-color: var(--color-acento-1);
     margin: 12px 0px 0px 0px;
-    padding: 14px 40px 14px 40px;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botonInicioSesionRegistro:hover {
+    background-color: var(--color-acento-2);
+    color: var(--color-texto);
+    transition: 0.3s;
 }
 
 .formtext input {
@@ -36,6 +47,12 @@ body {
     background-color: var(--color-acento-2);
     opacity: 0.6;
     font-family: 'Work Sans';
+    color: var(--color-texto);
+}
+
+.formtext input::placeholder {
+    color: var(--color-texto);
+    opacity: 0.8;
 }
 
 .title {
@@ -49,10 +66,12 @@ body {
 .hiperlink {
     font-size: 14px;
     font-family: 'Work Sans';
-    text-decoration: none;
+    color: var(--color-acento-1);
+    text-decoration: dashed underline;
 }
 
 .parrafos {
     font-size: 14px;
     font-family: 'Work Sans';
+    color: var(--color-texto);
 }

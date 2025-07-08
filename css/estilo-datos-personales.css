@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--color-fondo);
 }
 
 .container {
     max-width: 700px;
     width: 100%;
     padding: 30px;
-    border-style: solid;
-    border-color: black;
+    border: 3px solid var(--color-texto);
     background-color: var(--color-fondo);
 }
 
@@ -64,28 +64,40 @@ hr {
 }
 
 .btn_guardar input {
-    background: var(--color-acento-1);
-    color: #fcfdfd;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: var(--color-fondo);
+    border-radius: 10px;
+    background-color: var(--color-acento-1);
+    margin: 12px 0px 0px 0px;
+    padding: 14px 40px;
     font-size: 16px;
     font-family: 'Work Sans';
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.password-row .btn_cambiar {
-    background: var(--color-acento-3);
-    color: #fcfdfd;
-    padding: 10px 20px;
-    border-radius: 5px;
+.btn_guardar input:hover {
+    background-color: var(--color-acento-2);
+    color: var(--color-texto);
+    transition: 0.3s;
+}
+
+.btn_cambiar {
     border: none;
+    color: var(--color-fondo);
+    border-radius: 10px;
+    background-color: var(--color-acento-1);
+    padding: 14px 40px;
     font-size: 16px;
     font-family: 'Work Sans';
-    font-weight: bold;
-    width: 20%;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.btn_cambiar:hover {
+    background-color: var(--color-acento-2);
+    color: var(--color-texto);
+    transition: 0.3s;
 }
 
 .password-row {

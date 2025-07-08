@@ -1,4 +1,8 @@
 /* Foto de Perfil HEADER */
+.logo {
+    justify-content: flex-start;
+}
+
 .foto-perfil {
     width: 50px;
     height: 50px;
@@ -12,7 +16,6 @@
     gap: 20px;
     width: 33%;
     justify-content: flex-end;
-    margin-right: 40px
 }
 
 .sesion-iniciada-icono span {
@@ -57,7 +60,6 @@
     font-family: 'Titillium Web', sans-serif;
     font-size: 3em;
     font-weight: 800;
-    margin-bottom: 0.5em;
     color: var(--color-texto);
     display: inline-block;
 }
@@ -70,7 +72,6 @@
 }
 
 .detalle-info p {
-    color: var(--color-texto);
     font-size: 1.2em;
     margin-bottom: 1.5em;
 }
@@ -167,6 +168,20 @@
 }
 
 /* Clasificacion por Edad */
+.detalle-edad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+    width: 60px;
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 10px;
+    /* border-bottom: 1px solid var(--color-fondo);
+    border-right: 1px solid var(--color-fondo); */
+}
 
 /* Detalle del panel para la calificacion */
 .detalle-panel {
@@ -180,12 +195,142 @@
 
 .detalle-calificacion h4 {
     font-family: 'Work Sans', sans-serif;
-    margin: 1em 0 0.5em 0;
-    font-size: 1.1em;
+    margin: 1em 0.5em;
+    font-size: 1em;
 }
 
 .estrella {
     color: var(--color-acento-);
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin: 0 0.1em;
+}
+
+/* ===================== */
+/*   MEDIA QUERIES      */
+/* ===================== */
+
+@media (max-width: 1200px) {
+    .detalle-pelicula {
+        gap: 1em;
+        padding: 0.5em;
+    }
+
+    .detalle-info {
+        max-width: 500px;
+    }
+
+    .detalle-portada {
+        width: 250px;
+    }
+
+    .detalle-portada img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .detalle-pelicula {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .detalle-info h2 {
+        font-size: 1.8em;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .detalle-info p {
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .detalle-info {
+        max-width: 100%;
+    }
+
+    .detalle-portada {
+        width: 250px;
+    }
+
+    .detalle-portada img {
+        width: 250px;
+    }
+
+    .detalle-panel {
+        margin: 1em;
+    }
+
+    .logo img {
+        max-width: 36px;
+        max-height: 36px;
+    }
+
+    .detalle-duracion {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 600px) {
+    .detalle-pelicula {
+        padding: 0.5em;
+        gap: 1em;
+    }
+
+    .detalle-info h2 {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .detalle-info p {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .detalle-info h3 {
+        font-size: 1em;
+    }
+
+    .detalle-portada {
+        width: 220px;
+    }
+
+    .detalle-portada img {
+        width: 220px;
+    }
+
+    .detalle-reparto li {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .detalle-panel {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .logo img {
+        max-width: 28px;
+        max-height: 28px;
+    }
+
+    .detalle-duracion {
+        font-size: 0.85em;
+    }
+
+    .foto-perfil {
+        height: 28px;
+        width: 28px;
+    }
 }

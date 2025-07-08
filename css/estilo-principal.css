@@ -89,7 +89,7 @@ main {
    display: flex;
    flex-direction: column;
    align-items: center;
-
+   position: relative;
 }
 
 /* Estilo para el Logo */
@@ -230,9 +230,6 @@ main {
    color: var(--color-acento-3);
 }
 
-#navegacion-categoria a:last-child {
-   border-right: none;
-}
 
 /* Estilos para las Peliculas */
 .item-valor-nombre {
@@ -269,6 +266,25 @@ p {
    font-size: 18px;
 }
 
+/*Estilos para el Favorito*/
+.icono-fav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   width: 30px;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   z-index: 2;
+   cursor: pointer;
+   padding: 4px;
+   border-radius: 50%;
+}
+
+.icono-fav svg {
+   fill: #445566;
+}
 
 /*Estilos para el footer */
 .footer {
@@ -330,17 +346,17 @@ p {
 .carousel-item img {
    width: 100%;
    height: auto;
-   max-height: 575px;
+   max-height: 675px;
    object-fit: cover;
 }
 
 .articulo-categoria img {
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
    cursor: pointer;
 }
 
 .articulo-categoria img:hover {
-   transform: scale(1.05);
+   /* transform: scale(1.05); */
    box-shadow: 0 8px 24px rgb(78, 87, 74);
 }
 
@@ -372,7 +388,7 @@ p {
 
    #logo-h1 {
       font-family: 'Titillium Web', sans-serif;
-      font-size: 1, 18em;
+      font-size: 1.18em;
       margin-top: 10px;
       margin-bottom: 10px;
    }
@@ -384,10 +400,9 @@ p {
    }
 
    #logo-h1 i {
-      font-size: 2, 18em;
+      font-size: 2.18em;
       margin-right: 10px;
    }
-
 
 }
 
@@ -418,6 +433,40 @@ p {
 
    .header-articulo img {
       max-height: 250px;
+   }
+
+   .logo {
+      justify-content: flex-start;
+      width: fit-content;
+   }
+
+   .iniciar-sesion a {
+      padding: 10px;
+   }
+
+   .iniciar-sesion a:last-child {
+      margin-right: 20px;
+   }
+
+   .iniciar-sesion {
+      width: fit-content;
+      margin: 0;
+   }
+
+   .iniciar-sesion i {
+      font-size: 1.5em;
+   }
+
+   .ocultar {
+      display: none;
+   }
+
+   #cambiar-modo {
+      height: 50px;
+      width: 50px;
+      padding: 0;
+      cursor: pointer;
+      border: none;
    }
 
 }
