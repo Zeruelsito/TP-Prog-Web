@@ -360,6 +360,34 @@ p {
    box-shadow: 0 8px 24px rgb(78, 87, 74);
 }
 
+/* Estilos para el botón de favorito */
+
+.boton-favorito {
+   background-color: white;
+   border: none;
+   border-radius: 50%;
+   width: 32px;
+   height: 32px;
+   display: flex;
+   /* para centrar el icono */
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   cursor: pointer;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+   transition: background-color 0.3s ease, transform 0.2s;
+   top: 3%;
+   left: 5%;
+}
+
+.boton-favorito:hover {
+   transform: scale(1.15);
+}
+
+.boton-favorito.favorito ion-icon {
+   color: red;
+}
+
 /* MEDIA QUERIES */
 /* Desktop */
 @media (max-width: 1366px) {

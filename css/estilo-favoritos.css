@@ -1,0 +1,89 @@
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#seccion-categoria {
+    width: 425px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--color-acento-1);
+    border-bottom: 2px solid var(--color-acento-2);
+}
+
+.item-favorito {
+    background-color: var(--color-acento-2);
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(81, 96, 78, 0.379);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 220px;
+}
+
+.item-favorito:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(129, 151, 124, 0.5);
+}
+
+.item-favorito img {
+    max-width: 220px;
+    height: auto;
+}
+
+.item-favorito h3 {
+    margin: 0.8rem 0;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    position: relative;
+}
+
+.boton-favorito {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 3%;
+    left: 5%;
+}
+
+.boton-favorito:hover {
+    transform: scale(1.3);
+}
+
+.boton-favorito ion-icon {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.boton-favorito.favorito ion-icon {
+    color: red;
+}
+
+.boton-favorito:not(.favorito) ion-icon {
+    color: gray;
+}
+
+.icono-fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
