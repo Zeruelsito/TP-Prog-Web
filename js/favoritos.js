@@ -1,16 +1,18 @@
-fetch("../data/items.json")
-  .then((res) => res.json())
-  .then((items) => mostrarFavoritos(items));
+const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
+const iconosLista = document.getElementsByClassName("icono-fav");
+const iconosArray = Array.from(iconosLista);
 
-let usuarioLogueado
-
-if (usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado")) == undefined) {
-  console.log("No hay usuario");
+if (usuarioLogueado === null) {
+  console.log("No hay usuario FINAL");
 } else {
+  fetch("../data/items.json")
+    .then((res) => res.json())
+    .then((items) => mostrarFavoritos(items));
+
   function mostrarFavoritos(items) {
     const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
-    const contenedor = document.getElementById("seccion-categoria"); // No uses un div intermedio
-    contenedor.innerHTML = ""; // Limpiar antes de agregar
+    const contenedor = document.getElementById("seccion-categoria");
+    contenedor.innerHTML = "";
 
     const itemsFavoritos = items.filter((item) => favoritos.includes(item.Id));
 
@@ -19,21 +21,19 @@ if (usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado")) == u
       div.classList.add("articulo-categoria");
 
       div.innerHTML = `
-<div class="header-articulo">
-        <button class="boton-favorito favorito" data-id="${item.Id}">
-            <ion-icon name="heart"></ion-icon>
-        </button>
-        <img src="${item.Portada}" alt="${item.Nombre}">
-    </div>
-    <h3 class="item-valor-nombre">${item.Nombre}</h3>
-`;
+        <div class="header-articulo">
+            <button class="boton-favorito favorito" data-id="${item.Id}">
+                <ion-icon name="heart"></ion-icon>
+            </button>
+            <img src="${item.Portada}" alt="${item.Nombre}">
+        </div>
+        <h3 class="item-valor-nombre">${item.Nombre}</h3>
+      `;
 
       const boton = div.querySelector(".boton-favorito");
       const icono = boton.querySelector("ion-icon");
 
       boton.addEventListener("click", () => {
-        // event.stopPropagation();
-
         toggleFavorito(item.Id);
         const esAhoraFavorito = esFavorito(item.Id);
 
@@ -43,11 +43,11 @@ if (usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado")) == u
         } else {
           boton.classList.remove("favorito");
           icono.setAttribute("name", "heart-outline");
-          div.remove(); // quita de la vista
+          div.remove(); // Eliminar de la vista
         }
       });
 
-      contenedor.appendChild(div); // div tiene la clase "articulo-categoria"
+      contenedor.appendChild(div);
     });
   }
 

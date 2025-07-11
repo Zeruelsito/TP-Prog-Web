@@ -27,7 +27,8 @@ document
       usuarios.push({
         mail: mailRegistro,
         contraseña: contraseñaRegistro,
-        datosPersonales: []
+        datosPersonales: [],
+        favoritos:[]
       });
 
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
