@@ -118,6 +118,12 @@ main {
    display: flex;
 }
 
+.parrafos {
+    font-size: 14px;
+    font-family: 'Work Sans';
+    color: var(--color-texto);
+}
+
 /*Estilos para la barra */
 .barra {
    display: flex;
