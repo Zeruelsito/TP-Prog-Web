@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
    <meta charset="UTF-8">
@@ -12,7 +12,9 @@
 
    <div class="contenedor formtext">
       <h1 class="title">Iniciar Sesion</h1>
-      <form action="" method="post">
+      <p class="parrafos" style="display: none;" id="errorInicio">Cuenta incorrecta o no existe</p>
+      <p class="parrafos" style="display: none;" id="inicioCorrecto">Ingreso correctamente</p>
+      <form action="" method="post" id="inicioSesion">
          <input type="email" size="30"class="inputMailContraseña" name="mailUsuario" id="mailUsuario" placeholder="Email*">
          <br>
          <input type="password" size="30" class="inputMailContraseña" name="contraseñaUsuario" id="contraseñaUsuario" placeholder="Contraseña*">
@@ -28,6 +30,6 @@
    </div>
    
    <script src="../js/modo-oscuro.js"></script>
-   
+   <script src="..\js\inicio-sesion.js"></script>
 </body>
 </html>

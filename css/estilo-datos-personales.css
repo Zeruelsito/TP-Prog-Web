@@ -1,118 +1,154 @@
-﻿body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-fondo);
+﻿#logo-h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2, 18em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#logo-h1 a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: bold;
+}
+
+#logo-h1 i {
+  font-size: 2, 18em;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+body {
+  display: flex;
+  gap: 4em;
+  flex-direction: row;
+  background-color: var(--color-fondo);
+  justify-content: center;
+  align-items: stretch;
 }
 
 .container {
-    max-width: 700px;
-    width: 100%;
-    padding: 30px;
-    border: 3px solid var(--color-texto);
-    background-color: var(--color-fondo);
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  border: 3px solid var(--color-texto);
+  background-color: var(--color-fondo);
 }
 
 .menu {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-    color: #888;
-    font-size: 20px;
-    font-weight: normal;
-    font-family: 'Work Sans';
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  color: #888;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Work Sans";
 }
 
 .title {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Titillium Web';
-    color: var(--color-texto);
-    height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Titillium Web";
+  color: var(--color-texto);
+  height: 40px;
 }
 
 .formtext {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 20px;
 }
 
 .formtext label {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'biryani';
-    color: var(--color-texto);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "biryani";
+  color: var(--color-texto);
 }
 
 .formtext input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    background-color: #d3eee4;
-    opacity: 0.6;
-    font-family: 'Work Sans';
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #d3eee4;
+  opacity: 0.6;
+  font-family: "Work Sans";
 }
 
 hr {
-    background-color: var(--color-acento-3);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 0.5px;
+  background-color: var(--color-acento-3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 0.5px;
 }
 
 .btn_guardar input {
-    border: none;
-    color: var(--color-fondo);
-    border-radius: 10px;
-    background-color: var(--color-acento-1);
-    margin: 12px 0px 0px 0px;
-    padding: 14px 40px;
-    font-size: 16px;
-    font-family: 'Work Sans';
-    cursor: pointer;
-    font-weight: bold;
+  border: none;
+  color: var(--color-fondo);
+  border-radius: 10px;
+  background-color: var(--color-acento-1);
+  margin: 12px 0px 0px 0px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-family: "Work Sans";
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .btn_guardar input:hover {
-    background-color: var(--color-acento-2);
-    color: var(--color-texto);
-    transition: 0.3s;
+  background-color: var(--color-acento-2);
+  color: var(--color-texto);
+  transition: 0.3s;
 }
 
 .btn_cambiar {
-    border: none;
-    color: var(--color-fondo);
-    border-radius: 10px;
-    background-color: var(--color-acento-1);
-    padding: 14px 40px;
-    font-size: 16px;
-    font-family: 'Work Sans';
-    cursor: pointer;
-    font-weight: bold;
+  border: none;
+  color: var(--color-fondo);
+  border-radius: 10px;
+  background-color: var(--color-acento-1);
+  padding: 14px 40px;
+  font-size: 16px;
+  font-family: "Work Sans";
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .btn_cambiar:hover {
-    background-color: var(--color-acento-2);
-    color: var(--color-texto);
-    transition: 0.3s;
+  background-color: var(--color-acento-2);
+  color: var(--color-texto);
+  transition: 0.3s;
 }
 
 .password-row {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }
 
 .password-row input {
-    width: 80%;
+  width: 80%;
 }
 
 .datarow {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  body {
     display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-    flex-wrap: wrap;
+    gap: 4em;
+    flex-direction: column;
+    background-color: var(--color-fondo);
+    justify-content: center;
+    align-items: center;
+  }
 }

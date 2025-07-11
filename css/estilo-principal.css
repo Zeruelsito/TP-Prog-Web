@@ -7,6 +7,9 @@
    box-sizing: border-box;
 }
 
+.cerrarSesion{
+   background: var(--color-fondo);
+}
 
 #encabezado-principal {
    display: flex;
