@@ -42,8 +42,14 @@
          </button>
       </form>
       <div class="iniciar-sesion">
-         <a href="html/login.html" target="_blank">
+         <a href="html\login.html" id="sesion">
             <i class="bi bi-person"></i><span class="ocultar">Iniciar Sesion</span>
+         </a>
+         <a href="html\datos-personales.html" id="sesionIniciada" style="display: none;">
+            <i class="bi bi-person"></i><span class="ocultar">Datos Personales</span>
+         </a>
+         <a href="index.html" id="sesionIniciadaCerrar" style="display: none;">
+           <i class="bi bi-box-arrow-in-right"></i></i><span class="ocultar" id="cerrarSesion">Cerrar sesion</span>
          </a>
          <a href="html/peliculas-favoritas.html">
             <i class="bi bi-star-fill"></i><span class="ocultar">Favoritas</span>
@@ -98,9 +104,9 @@
          <a href="#" id="tab-categoria-5" class="tab-categoria" onclick="botonClickeado(4)">Terror</a>
       </nav>
 
-      <section class="peliculas-titulo">
+      <!-- <section class="peliculas-titulo">
          <h2>Peliculas</h2>
-      </section>
+      </section> -->
 
 
       <section id="seccion-categoria">
@@ -499,7 +505,8 @@
    <script type="module" src="js/portada-carrousel.js"></script>
    <script src="js/cambiar-url.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+   <script src="js\usuario-presente.js"></script>
+   <script src="js/cerrar-usuario.js"></script>
 
 </body>
 

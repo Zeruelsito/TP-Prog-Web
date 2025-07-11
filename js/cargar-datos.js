@@ -5,7 +5,7 @@ import configuracion from "../config/configuracion.json" with { type: 'json' };
 
 
 const tabCategoria1 = document.getElementById("tab-categoria-1");
-
+const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
 let linksCategorias = document.querySelectorAll("a.tab-categoria");
 
 linksCategorias.forEach((linkCategoria) => {
@@ -53,10 +53,14 @@ linksCategorias.forEach((linkCategoria) => {
 
          // Elimina cualquier evento anterior y agrega el nuevo
          botonFavorito.onclick = () => {
-            toggleFavorito(Id);
-            const esAhoraFavorito = esFavorito(Id);
-            icono.setAttribute("name", esAhoraFavorito ? "heart" : "heart-outline");
+
+            if (usuarioLogueado !== null) {
+               toggleFavorito(Id);
+               const esAhoraFavorito = esFavorito(Id);
+               icono.setAttribute("name", esAhoraFavorito ? "heart" : "heart-outline");
             botonFavorito.classList.toggle("favorito", esAhoraFavorito);
+}
+            
          };
 
 
