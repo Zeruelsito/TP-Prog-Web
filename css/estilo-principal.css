@@ -82,7 +82,6 @@ main {
    flex-direction: column;
    color: var(--color-texto);
    font-family: 'Work Sans', sans-serif;
-
 }
 
 .header-articulo {
@@ -95,7 +94,7 @@ main {
 /* Estilo para el Logo */
 #logo-h1 {
    font-family: 'Titillium Web', sans-serif;
-   font-size: 2, 18em;
+   font-size: 2.18em;
    margin-top: 10px;
    margin-bottom: 10px;
 }
@@ -114,7 +113,6 @@ main {
 .logo {
    width: 33%;
    display: flex;
-   justify-content: center;
 }
 
 /*Estilos para la barra */
@@ -360,6 +358,13 @@ p {
    box-shadow: 0 8px 24px rgb(78, 87, 74);
 }
 
+.titulo-carousel{
+   font-weight: 700;
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 2em;
+   color: #ffffff;
+}
+
 /* Estilos para el botón de favorito */
 
 .boton-favorito {
@@ -447,6 +452,13 @@ p {
    .header-articulo img {
       max-height: 300px;
    }
+
+   .titulo-carousel{
+      font-weight: 700;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 2em;
+      color: #ffffff;
+   }
 }
 
 /* Celular */
@@ -496,5 +508,4 @@ p {
       cursor: pointer;
       border: none;
    }
-
 }

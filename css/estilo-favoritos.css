@@ -1,7 +1,4 @@
 body {
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,6 +10,12 @@ body {
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     max-width: 100%;
+    background-color: var(--color-fondo);
+}
+
+.titulo {
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--color-texto);
 }
 
 h1 {
@@ -20,8 +23,11 @@ h1 {
     padding: 1rem;
     font-family: 'Titillium Web', sans-serif;
     color: var(--color-acento-1);
-    border-bottom: 2px solid var(--color-acento-2);
 }
+
+main {
+    background: var(--color-fondo);
+ }
 
 .item-favorito {
     background-color: var(--color-acento-2);
@@ -87,3 +93,98 @@ h1 {
     right: 10px;
     z-index: 10;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+@media (max-width: 1366px) {
+    #seccion-categoria {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-gap: 0.8em;
+       background-color: var(--color-fondo);
+       justify-content: center;
+    }
+ 
+    .header-articulo img {
+       max-height: 360px;
+    }
+    #logo-h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.18em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+  
+     #logo-h1 a {
+        text-decoration: none;
+        color: var(--color-texto);
+        font-weight: bold;
+     }
+  
+     #logo-h1 i {
+        font-size: 2.18em;
+        margin-right: 10px;
+     }
+}
+
+@media (max-width: 1024px) {
+    #seccion-categoria {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 0.8em;
+       background-color: var(--color-fondo);
+       justify-content: center;
+    }
+ 
+    .header-articulo img {
+       max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #seccion-categoria {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap: 0.8em;
+       background-color: var(--color-fondo);
+       justify-content: center;
+    }
+ 
+    .header-articulo img {
+       max-height: 250px;
+    }
+ 
+    .logo {
+       justify-content: flex-start;
+       width: fit-content;
+    }
+ 
+    .iniciar-sesion a {
+       padding: 10px;
+    }
+ 
+    .iniciar-sesion a:last-child {
+       margin-right: 20px;
+    }
+ 
+    .iniciar-sesion {
+       width: fit-content;
+       margin: 0;
+    }
+ 
+    .iniciar-sesion i {
+       font-size: 1.5em;
+    }
+ 
+    .ocultar {
+       display: none;
+    }
+ }

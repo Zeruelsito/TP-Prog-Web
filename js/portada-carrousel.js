@@ -38,7 +38,7 @@ portadas.forEach((item, i) => {
       <div class="text-center">
         <img src="${item.Foto_Carousel}" class="d-block w-100" alt="${item.Nombre}">
         <div class="carousel-caption d-none d-md-block">
-          <h5>${item.Nombre}</h5>
+          <h5 class="titulo-carousel">${item.Nombre}</h5>
       </div>
     `;
     carouselInner.appendChild(slide);

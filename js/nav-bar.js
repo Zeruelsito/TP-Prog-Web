@@ -1,4 +1,4 @@
-import items from "../data/items.json" with { type: 'json' };
+import items from "../data/items.json" with { type: 'json' }; //Importa los datos de las peliculas.
 
 const buscador = document.querySelector("#buscador");
 let resultados = document.querySelector("#seccion-categoria");
@@ -7,26 +7,18 @@ let categoria;
 const elementoNav = document.getElementsByClassName("tab-categoria");
 
 
-Array.from(elementoNav).forEach((item) => {
-    item.addEventListener("click", () => {
+Array.from(elementoNav).forEach((item) => { // Guardo la categoria seleccionada
+    item.addEventListener("click", () => { // Cuando el usuario hace click en una categoria, se guarda el nombre de la categoria seleccionada
         categoria = item.innerText;
     })
 });
 
-buscador.addEventListener("keyup", () => {
+buscador.addEventListener("keyup", () => { //Cada vez que el usuario escribe algo, se ejecuta la función de búsqueda.
     let valorInput = buscador.value;
     let valoresFiltrados;
 
-    // if (valorInput.length >= 3) {
-    //     valoresFiltrados = items.filter(item =>
-    //         (item.Autor.toLowerCase().includes(valorInput.toLowerCase()) ||
-    //             item.Nombre.toLowerCase().includes(valorInput.toLowerCase())) && categoria === item.Categoria
-    //     );
-    //     console.log(`Filtrando por: ${valorInput} en la categoría: ${categoria}`)
-    // }
-
     if (valorInput.trim() === "") {
-        resultados.innerHTML = paginaCompleta;
+        resultados.innerHTML = paginaCompleta;  
     } else {
         if (valorInput.length >= 3) {
             valoresFiltrados = items.filter(item =>
@@ -56,3 +48,11 @@ buscador.addEventListener("keyup", () => {
         }
     }
 })
+
+/* Si el buscador está vacío, se muestra el contenido original (paginaCompleta).
+Si el usuario escribe 3 o más caracteres, filtra las películas que:
+Coincidan en el nombre o autor (ignorando mayúsculas/minúsculas).
+Sean de la categoría seleccionada.
+Si encuentra resultados, los muestra como tarjetas de película.
+Si no encuentra nada, muestra el mensaje: "No se encontró nada."
+*/
